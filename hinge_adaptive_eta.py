@@ -6,11 +6,6 @@ Created on Mon Feb 17 17:03:40 2020
 @author: dogacanyilmaz
 """
 
-'''
-# Local filepaths
-datafile='/Users/dogacanyilmaz/Downloads/ionosphere/ionosphere.data'
-labelfile='/Users/dogacanyilmaz/Downloads/ionosphere/ionosphere.trainlabels.0'
-'''
 import sys
 import random
 
@@ -46,33 +41,6 @@ while(l !=''):
 
 
 #n holds the number of 0 and 1 classes in the train set
-
-
-############################
-#temp data
-'''
-data=[[1,1],
-      [1,2],
-      [1,3],
-      [3,1],
-      [3,2],
-      [3,3],
-      [50,2]]
-rows=len(data)
-cols=len(data[0])
-trainlabels={0:0,
-             1:0,
-             2:0,
-             3:1,
-             4:1,
-             5:1,
-             6:1}
-n=[3,4]
-'''
-
-
-
-
 ##############################
 
 eta_list = [1, .1, .01, .001, .0001, .00001, .000001, .0000001, .00000001, .000000001, .0000000001, .00000000001 ]
