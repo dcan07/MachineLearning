@@ -6,12 +6,6 @@ Created on Mon Mar 30 17:09:51 2020
 @author: dogacanyilmaz
 """
 
-
-'''
-# Local filepaths
-datafile='/Users/dogacanyilmaz/Downloads/breast_cancer/breast_cancer.data'
-labelfile='/Users/dogacanyilmaz/Downloads/breast_cancer/breast_cancer.labels'
-'''
 import sys
 
 
@@ -44,34 +38,6 @@ while(l !=''):
     trainlabels[int(a[1])]=int(a[0])
     l=f.readline()
     n[int(a[0])]+=1
-
-
-    
-
-
-############################
-#temp data
-'''
-data=[[1,1,.1],
-      [3,3,.4],
-      [5,2,.6],
-      [2,6,.2],
-      [4,5,.5],
-      [6,4,.7]]
-rows=len(data)
-cols=len(data[0])
-trainlabels={0:0,
-             1:0,
-             2:0,
-             3:1,
-             4:1,
-             5:1}
-n=[3,3]
-'''
-
-
-
-
 ##############################
 #Sorts values in column in ascending order
 #The same sorting is applied to labels too, so that every row is same 
@@ -125,9 +91,6 @@ def partition(column,labels,cutoffvalue):
     
     return [gini,cutoffvalue]
         
-
-
-
 #Get the unique values in array
 def getunique(getlist): 
     uniques= [] 
