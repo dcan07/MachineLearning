@@ -7,10 +7,10 @@ Libraries such as Numpy or sklearn are not allowed for the homeworks, so impleme
 ## HW1
 Naive Bayes classifier
 
-## HW2
+### HW2
 Gradient descent for minimizing the least squares loss
 
-## HW3
+### HW3
 
 ## HW4
 
