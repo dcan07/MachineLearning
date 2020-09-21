@@ -7,20 +7,25 @@ Libraries such as Numpy or sklearn are not allowed for the homeworks, so impleme
 ## HW1
 Naive Bayes classifier
 
+
 ### HW2
 Gradient descent for minimizing the least squares loss
 
+
+
 ### HW3
 
-## HW4
+Implement SVM hinge loss gradient descent 
 
-## HW5
+### HW4
 
-## HW6
+### HW5
 
-## HW7
+### HW6
 
-## HW8
+### HW7
+
+### HW8
 
 
 
