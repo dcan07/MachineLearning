@@ -19,12 +19,7 @@ from sklearn import svm
 #5)Using best features build SVM model using all data
 #6)Prediction
 
-'''
-# Local filepaths
-file1='/Users/dogacanyilmaz/Dropbox/cs675/project1/traindata'
-file2='/Users/dogacanyilmaz/Dropbox/cs675/project1/trueclass'
-file3='/Users/dogacanyilmaz/Dropbox/cs675/project1/testdata'
-'''
+
 file1=sys.argv[1]
 file2=sys.argv[2]
 file3=sys.argv[3]
@@ -308,47 +303,12 @@ train_data=train_data[:,important_columns]
 '''
 parameters=parameteroptimization(train_data,trainlabels)
 '''
-#The results of parameters are:
-#Number of features used
-#Regularization coefficient for feature selection SVM
-#Accuracy
-#Best prediction SVM regularization coefficient
-'''
-[8, 0.1, 0.628125, 0.1]
-[8, 1, 0.6379999999999999, 0.01]
-[9, 0.01, 0.6340000000000001, 0.01]
-[9, 0.1, 0.6224999999999999, 0.01]
-[9, 1, 0.6236249999999999, 0.01]
-[10, 0.01, 0.6249999999999999, 10]
-[10, 0.1, 0.6285000000000001, 1]
-[10, 1, 0.63575, 10]
-[11, 0.01, 0.6367499999999999, 10]
-[11, 0.1, 0.6265000000000001, 0.1]
-[11, 1, 0.630125, 0.01]
-[12, 0.01, 0.63825, 10]
-[12, 0.1, 0.638625, 0.01]
-[12, 1, 0.6311249999999999, 1]
-[13, 0.01, 0.63825, 0.1]
-[13, 0.1, 0.6392500000000001, 10]
-[13, 1, 0.6525000000000001, 0.1]
-[14, 0.01, 0.6533749999999999, 0.01]
-[14, 0.1, 0.6540000000000001, 1]
-[14, 1, 0.6419999999999999, 0.1]
-[15, 0.01, 0.651375, 0.01]
-[15, 0.1, 0.6530000000000001, 10]
-[15, 1, 0.647625, 0.1]
-'''
 
 #I decided to use these set of parameters 
 columnsselected=getbestC(train_data,trainlabels,14,0.1)
 
-
-
-
 bestC=columnsselected[0]
 columnsselected=columnsselected[2]
-
-
 
 #Lets build the model using all training data and selected columns
 
