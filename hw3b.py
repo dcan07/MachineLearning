@@ -6,11 +6,7 @@ Created on Mon Feb 24 17:13:39 2020
 @author: dogacanyilmaz
 """
 
-'''
-# Local filepaths
-datafile='/Users/dogacanyilmaz/Downloads/ionosphere/ionosphere.data'
-labelfile='/Users/dogacanyilmaz/Downloads/ionosphere/ionosphere.trainlabels.0'
-'''
+
 import sys
 import random
 
@@ -48,38 +44,9 @@ while(l !=''):
 #n holds the number of 0 and 1 classes in the train set
 
 
-############################
-#temp data
-'''
-data=[[1,1],
-      [1,2],
-      [1,3],
-      [3,1],
-      [3,2],
-      [3,3],
-      [50,2]]
-rows=len(data)
-cols=len(data[0])
-trainlabels={0:0,
-             1:0,
-             2:0,
-             3:1,
-             4:1,
-             5:1,
-             6:1}
-n=[3,4]
-'''
-
-
-
-
-##############################
-
 eta=float(sys.argv[3])
 stoppingcondition=float(sys.argv[4])
-#eta=0.001
-#stoppingcondition=0.001
-#stoppingcondition=0.000000001
+
 C=0.01
 #define dot product function
 def dotpruduct(a,b):
@@ -176,17 +143,6 @@ while(abs(previous-objective)>=stoppingcondition):
         
     #Recalculate objective
     objective=hingeloss(data,trainlabels,w,C)
-
-'''
-#Print the w
-temp=0
-for j in range(cols-1):
-    print(w[j])
-    temp+=w[j]**2
-
-print(abs(w[cols-1]/(temp**0.5)))
-'''
-
 
 ###################################################
 #Start labeling
