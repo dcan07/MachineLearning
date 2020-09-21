@@ -15,12 +15,7 @@ from sklearn import svm
 #it just makes testing and comparison easier
 useoriginaldata=False
 
-'''
-# Local filepaths
-file1='/Users/dogacanyilmaz/Downloads/ionosphere/ionosphere.data'
-file2='/Users/dogacanyilmaz/Downloads/ionosphere/ionosphere.trainlabels.0'
 
-'''
 file1=sys.argv[1]
 file2=sys.argv[2]
 file3=sys.argv[3]
@@ -260,39 +255,4 @@ for i in range(len(data)):
         print(prediction[count],i)
         count+=1
 
-#
-####################
-## The remaining part is only used in testing
-## It prints the error of the test data
-#newfile='/Users/dogacanyilmaz/Downloads/ionosphere/ionosphere.labels'
-#
-#
-##read labels
-#f=open(newfile)
-#alllabels={}
-#n=[]
-#n.append(0)
-#n.append(0)
-#l=f.readline()
-#while(l !=''):
-#    a=l.split()
-#    alllabels[int(a[1])]=int(a[0])
-#    '''
-#    if(trainlabels[int(a[1])]==0):
-#        trainlabels[int(a[1])]=-1
-#        '''
-#    l=f.readline()
-#
-#err=0
-#count=0
-#for i in range(len(data)):
-#    if(trainlabels.get(i)== None):
-#        if(prediction[count]!=alllabels.get(i)):
-#            err+=1
-#        count+=1
-#
-#
-##Print best C, percent CV and test errors 
-#print(temp[0])
-#print("%.2f" % (temp[1]*100))
-#print("%.2f" % (err/count*100))
+
