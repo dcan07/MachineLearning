@@ -7,12 +7,6 @@ Created on Mon Apr 13 13:29:38 2020
 """
 
 
-'''
-# Local filepaths
-datafile='/Users/dogacanyilmaz/Downloads/ionosphere2/ionosphere.data'
-datafile='/Users/dogacanyilmaz/Downloads/climate_simulation2/climate.data'
-
-'''
 import sys
 import random
 
