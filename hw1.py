@@ -42,29 +42,6 @@ while(l !=''):
 #n holds the number of 0 and 1 classes in the train set
 
 
-############################
-#temp data
-'''
-data=[[1,2,1],
-      [2,2,1],
-      [2,2,2],
-      [1,2,3],
-      [5,6,7],
-      [4,6,7],
-      [5,7,4],
-      [7,5,9],
-      [7,8,9]]
-rows=len(data)
-cols=len(data[0])
-trainlabels={3:0,
-             2:0,
-             0:0,
-             7:1,
-             5:1,
-             6:1,
-             4:1,}
-n=[3,4]
-'''
 ##############################
 #compute the means
 #Initialize them to be 0.1???
