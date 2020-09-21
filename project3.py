@@ -16,13 +16,6 @@ from sklearn.metrics import mean_squared_error
 from sklearn import preprocessing
 
 
-
-
-'''
-# Local filepaths
-file1='/Users/dogacanyilmaz/Dropbox/cs675/Sales_Transactions_Dataset_Weekly.csv'
-
-'''
 file1=sys.argv[1]
 
 
