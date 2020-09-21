@@ -15,10 +15,6 @@ from sklearn import svm
 file1='/Users/dogacanyilmaz/Dropbox/cs675/spam_train.csv'
 file2='/Users/dogacanyilmaz/Dropbox/cs675/spam_test.csv'
 
-'''
-file1=sys.argv[1]
-file2=sys.argv[2]
-'''
 #Read csv
 train=pd.read_csv(file1, sep=',',header=None,encoding='ISO-8859-1')
 test=pd.read_csv(file2, sep=',',header=None,encoding='ISO-8859-1')
