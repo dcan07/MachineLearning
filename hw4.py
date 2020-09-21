@@ -7,11 +7,6 @@ Created on Wed Feb 19 19:38:13 2020
 """
 
 
-'''
-# Local filepaths
-datafile='/Users/dogacanyilmaz/Dropbox/cs675/climate_simulation/climate.data'
-labelfile='/Users/dogacanyilmaz/Dropbox/cs675/climate_simulation/climate.trainlabels.0'
-'''
 import sys
 import random
 import math
@@ -50,64 +45,9 @@ while(l !=''):
 #n holds the number of 0 and 1 classes in the train set
 
 
-############################
-#temp data
-'''
-data=[[0,0],
-      [0,1],
-      [1,0],
-      [1,1],
-      [10,10],
-      [10,11],
-      [11,10],
-      [11,11]]
-rows=len(data)
-cols=len(data[0])
-trainlabels={0:0,
-             1:0,
-             2:0,
-             3:0,
-             4:1,
-             5:1,
-             6:1,
-             7:1}
-
-data=[[1,2],
-      [2,1],
-      [2,2],
-      [2,3],
-      [4,1],
-      [4,2],
-      [4,3],
-      [50,2]]
-rows=len(data)
-cols=len(data[0])
-trainlabels={0:0,
-             1:0,
-             2:0,
-             3:0,
-             4:1,
-             5:1,
-             6:1,
-             7:1}
-
-n=[4,4]
-'''
-
-
-
-
-##############################
-
 eta=float(sys.argv[3])
 stoppingcondition=float(sys.argv[4])
-'''
-eta=0.1
-stoppingcondition=0.0000001
 
-eta=0.001
-stoppingcondition=0.001
-'''
 #define dot product function
 def dotproduct(a,b):
     dp=0
@@ -193,10 +133,7 @@ while(abs(previous-objective)>=stoppingcondition):
         
     #Recalculate objective
     objective=minuslogloss(data,trainlabels,w)
-    #print(objective)
-    
-
-        
+    #print(objective)   
 
 '''
 #Print the w
