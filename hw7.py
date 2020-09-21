@@ -6,15 +6,6 @@ Created on Tue Apr  7 11:04:23 2020
 @author: dogacanyilmaz
 """
 
-
-'''
-# Local filepaths
-datafile='/Users/dogacanyilmaz/Downloads/ionosphere2/ionosphere.data'
-labelfile='/Users/dogacanyilmaz/Downloads/ionosphere2/ionosphere.trainlabels.0'
-datafile='/Users/dogacanyilmaz/Downloads/climate_simulation2/climate.data'
-labelfile='/Users/dogacanyilmaz/Downloads/climate_simulation2/climate.trainlabels.0'
-
-'''
 import sys
 import random
 
@@ -49,33 +40,6 @@ while(l !=''):
     trainlabels[int(a[1])]=int(a[0])
     l=f.readline()
     n[int(a[0])]+=1
-
-
-
-############################
-#temp data
-'''
-data=[[1,1,.1],
-      [3,3,.4],
-      [5,2,.6],
-      [2,6,.2],
-      [4,5,.5],
-      [6,4,.7]]
-rows=len(data)
-cols=len(data[0])
-trainlabels={0:0,
-             #1:0,
-             2:0,
-             3:1,
-             4:1,
-             5:1}
-n=[3,3]
-'''
-
-
-
-
-##############################
 
 #Bubble sort columns and labels
 #The same sorting is applied to labels too, so that every row is same 
@@ -272,9 +236,6 @@ for k in range(100):
                 test_prediction[j] += -1
                 
     #print(splitcolumn)
-
-
-
 
 #Now print the predictions
 for j in range(0, len(test)):	
